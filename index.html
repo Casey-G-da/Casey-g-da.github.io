@@ -1,75 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Casey Grewen | Data Analyst Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Casey Grewen | Data Analyst Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #222;
+    }
 
-<style>
-body {
-font-family: Arial;
-margin: 40px;
-background:#f4f6f8;
-}
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
 
-h1 {
-color:#333;
-}
+    .hero {
+      margin-bottom: 40px;
+    }
 
-.project {
-background:white;
-padding:20px;
-margin-bottom:20px;
-border-radius:8px;
-box-shadow:0px 2px 6px rgba(0,0,0,0.1);
-}
+    .hero h1 {
+      font-size: 52px;
+      margin-bottom: 10px;
+    }
 
-a {
-text-decoration:none;
-color:#2b6cb0;
-font-weight:bold;
-}
+    .hero h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: #333;
+    }
 
-</style>
+    .hero p {
+      font-size: 18px;
+      max-width: 900px;
+    }
+
+    .project {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+
+    .project h2 {
+      font-size: 28px;
+      margin-top: 0;
+    }
+
+    .project p, .project li {
+      font-size: 18px;
+    }
+
+    a {
+      color: #2b6cb0;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .footer {
+      margin-top: 50px;
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
 </head>
-
 <body>
+  <div class="container">
+    <div class="hero">
+      <h1>Casey Grewen</h1>
+      <h3>Data Analyst | SQL | Python | BigQuery | Looker</h3>
+      <p>
+        I am a data analyst focused on turning raw data into clear business insights.
+        My portfolio features projects in SQL, Python, BigQuery, dashboard development,
+        and analytics storytelling.
+      </p>
+    </div>
 
-<h1>Casey Grewen</h1>
-<h3>Data Analyst | SQL | Python | BigQuery | Looker</h3>
+    <div class="project">
+      <h2>Ecommerce Revenue Optimization Analysis</h2>
 
-<p>
-Welcome to my data analytics portfolio. These projects demonstrate
-real-world data analysis, SQL querying, and dashboard development.
-</p>
+      <p>
+        An end-to-end analytics project using the Google Analytics public ecommerce dataset in BigQuery
+        to evaluate channel, device, and traffic-source performance. The goal was to identify which
+        acquisition paths generated the strongest revenue outcomes and where conversion opportunities existed.
+      </p>
 
-<div class="project">
+      <p><b>Business Question</b></p>
+      <p>
+        Which marketing channels, traffic sources, and device categories drive the most ecommerce revenue,
+        and where should a business focus optimization efforts to improve conversions and return on ad spend?
+      </p>
 
-<h2>Ecommerce Revenue Optimization Analysis</h2>
+      <p><b>What I Did</b></p>
+      <ul>
+        <li>Queried and analyzed ecommerce session data in BigQuery</li>
+        <li>Cleaned and organized performance metrics for reporting</li>
+        <li>Compared revenue, transactions, and conversion behavior by channel and device</li>
+        <li>Built a dashboard in Looker Studio to visualize business KPIs</li>
+        <li>Translated findings into practical revenue optimization recommendations</li>
+      </ul>
 
-<p>
-This project analyzes Google Analytics ecommerce data using
-BigQuery and Looker Studio to identify which traffic sources,
-devices, and channels drive the highest revenue.
-</p>
+      <p><b>Tools & Skills</b></p>
+      <ul>
+        <li>SQL (BigQuery)</li>
+        <li>Data Cleaning</li>
+        <li>KPI Analysis</li>
+        <li>Conversion Analysis</li>
+        <li>Revenue Optimization</li>
+        <li>Looker Studio</li>
+      </ul>
 
-<p><b>Skills Used</b></p>
+      <p><b>Project Outcome</b></p>
+      <p>
+        This project demonstrates my ability to work with raw analytics data, answer business questions with SQL,
+        build clear dashboards, and communicate insights that support data-driven decision-making.
+      </p>
 
-<ul>
-<li>SQL (BigQuery)</li>
-<li>Data Cleaning</li>
-<li>KPI Analysis</li>
-<li>Revenue Optimization</li>
-<li>Looker Studio Dashboards</li>
-</ul>
+      <p>
+        <a href="https://github.com/Casey-G-da/ecommerce-revenue-optimization-on-bigquery" target="_blank">
+          View Project Repository
+        </a>
+      </p>
+    </div>
 
-<p>
-
-<a href="https://github.com/Casey-G-da/ecommerce-revenue-optimization-on-bigquery">
-View Project Repository
-</a>
-
-</p>
-
-</div>
-
+    <div class="footer">
+      © 2026 Casey Grewen
+    </div>
+  </div>
 </body>
 </html>
