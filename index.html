@@ -1,92 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Casey Grewen | Data Analyst Portfolio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f6f8;
-      color: #222;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #0f172a, #1e293b);
+      color: #e2e8f0;
     }
 
     .container {
-      max-width: 1100px;
+      max-width: 1050px;
       margin: 0 auto;
-      padding: 50px 20px;
+      padding: 50px 20px 70px;
     }
 
     .hero {
-      margin-bottom: 40px;
+      text-align: center;
+      margin-bottom: 45px;
     }
 
     .hero h1 {
+      margin: 0 0 12px;
       font-size: 52px;
-      margin-bottom: 10px;
+      color: #f8fafc;
     }
 
     .hero h3 {
-      font-size: 22px;
-      margin-bottom: 20px;
-      color: #333;
+      margin: 0 0 18px;
+      font-size: 24px;
+      font-weight: 600;
+      color: #cbd5e1;
     }
 
     .hero p {
+      max-width: 850px;
+      margin: 0 auto 20px;
       font-size: 18px;
-      max-width: 900px;
+      line-height: 1.7;
+      color: #e2e8f0;
     }
 
-    .project {
-      background: white;
-      padding: 30px;
-      margin-bottom: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    .links {
+      margin-top: 10px;
     }
 
-    .project h2 {
-      font-size: 28px;
-      margin-top: 0;
-    }
-
-    .project p, .project li {
-      font-size: 18px;
-    }
-
-    a {
-      color: #2b6cb0;
+    .links a {
+      color: #38bdf8;
       text-decoration: none;
       font-weight: bold;
+      margin: 0 10px;
     }
 
-    a:hover {
+    .links a:hover {
       text-decoration: underline;
     }
 
+    .project {
+      background: #1e293b;
+      color: #f1f5f9;
+      padding: 32px;
+      margin: 0 auto 30px auto;
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
+    }
+
+    .project h2 {
+      margin-top: 0;
+      margin-bottom: 18px;
+      font-size: 30px;
+      color: #38bdf8;
+    }
+
+    .project p,
+    .project li {
+      font-size: 17px;
+      line-height: 1.7;
+      color: #e2e8f0;
+    }
+
+    .project ul {
+      margin-top: 8px;
+      margin-bottom: 18px;
+      padding-left: 22px;
+    }
+
+    .project img {
+      width: 100%;
+      max-width: 900px;
+      display: block;
+      margin: 22px auto 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+      background: #0f172a;
+    }
+
+    .caption {
+      font-size: 14px;
+      color: #cbd5e1;
+      margin-top: 8px;
+    }
+
+    .button {
+      display: inline-block;
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 11px 18px;
+      border-radius: 8px;
+      margin-top: 10px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.25s ease, transform 0.25s ease;
+    }
+
+    .button:hover {
+      background: #0ea5e9;
+      transform: translateY(-1px);
+    }
+
     .footer {
-      margin-top: 50px;
-      font-size: 16px;
-      color: #555;
+      text-align: center;
+      margin-top: 45px;
+      color: #cbd5e1;
+      font-size: 15px;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero h3 {
+        font-size: 20px;
+      }
+
+      .project {
+        padding: 24px;
+      }
+
+      .project h2 {
+        font-size: 25px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="hero">
+
+    <section class="hero">
       <h1>Casey Grewen</h1>
-      <h3>Data Analyst | SQL | Python | BigQuery | Looker</h3>
+      <h3>Data Analyst | SQL | Python | BigQuery | Looker | Machine Learning</h3>
       <p>
-        I am a data analyst focused on turning raw data into clear business insights.
-        My portfolio features projects in SQL, Python, BigQuery, dashboard development,
-        and analytics storytelling.
+        I am a data analyst focused on turning raw data into clear, useful business insights.
+        My portfolio includes SQL, Python, dashboard development, machine learning, and
+        data storytelling projects that demonstrate practical analytical problem-solving.
       </p>
-    </div>
 
-    <div class="project">
+      <div class="links">
+        <a href="https://github.com/Casey-G-da" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/casey-grewen-6baa46292/" target="_blank">LinkedIn</a>
+        <a href="https://www.kaggle.com/caseygman" target="_blank">Kaggle</a>
+      </div>
+    </section>
+
+    <section class="project">
       <h2>Ecommerce Revenue Optimization Analysis</h2>
-
 
       <p>
         An end-to-end analytics project using the Google Analytics public ecommerce dataset in BigQuery
@@ -94,9 +186,10 @@
         acquisition paths generated the strongest revenue outcomes and where conversion opportunities existed.
       </p>
 
-      <img src="Ilooker_dashboard.png" 
-alt="Ecommerce Revenue Optimization Dashboard"
-style="width:100%; max-width:900px; border-radius:10px; margin-top:20px;">
+      <img src="Ilooker_dashboard.png" alt="Ecommerce Revenue Optimization Dashboard">
+      <p class="caption">
+        Dashboard showing ecommerce performance metrics and channel-level insights built in Looker Studio.
+      </p>
 
       <p><b>Business Question</b></p>
       <p>
@@ -113,7 +206,7 @@ style="width:100%; max-width:900px; border-radius:10px; margin-top:20px;">
         <li>Translated findings into practical revenue optimization recommendations</li>
       </ul>
 
-      <p><b>Tools & Skills</b></p>
+      <p><b>Tools &amp; Skills</b></p>
       <ul>
         <li>SQL (BigQuery)</li>
         <li>Data Cleaning</li>
@@ -129,122 +222,105 @@ style="width:100%; max-width:900px; border-radius:10px; margin-top:20px;">
         build clear dashboards, and communicate insights that support data-driven decision-making.
       </p>
 
+      <a href="https://github.com/Casey-G-da/ecommerce-revenue-optimization-bigquery" target="_blank" class="button">
+        View Project Repository
+      </a>
+    </section>
+
+    <section class="project">
+      <h2>Heart Failure Prediction Model</h2>
+
       <p>
-        <a href="https://github.com/Casey-G-da/ecommerce-revenue-optimization-bigquery" target="_blank">
-View Project Repository
-</a>
-</a>
+        A machine learning project analyzing clinical health data to predict the likelihood of heart disease.
+        The notebook explores key cardiovascular risk factors, builds predictive models, and uses SHAP
+        explainability techniques to interpret which features have the greatest effect on model predictions.
       </p>
-    </div>
+
+      <img src="heart_shap.png" alt="SHAP feature importance summary for heart failure prediction model">
+      <p class="caption">
+        SHAP summary plot showing the relative influence of clinical features on heart disease prediction outcomes.
+      </p>
+
+      <p><b>Project Goals</b></p>
+      <ul>
+        <li>Explore clinical health data and cardiovascular risk factors</li>
+        <li>Build machine learning models for heart disease prediction</li>
+        <li>Evaluate model performance and feature importance</li>
+        <li>Interpret predictions using SHAP explainability techniques</li>
+      </ul>
+
+      <p><b>Tools &amp; Skills</b></p>
+      <ul>
+        <li>Python</li>
+        <li>Pandas</li>
+        <li>Scikit-Learn</li>
+        <li>Machine Learning</li>
+        <li>SHAP Explainability</li>
+        <li>Data Visualization</li>
+      </ul>
+
+      <p><b>Project Insight</b></p>
+      <p>
+        The SHAP analysis highlights that ST slope, exercise-induced angina, and Oldpeak were among the most
+        influential predictors in the model. This project demonstrates not only predictive modeling skills,
+        but also the ability to explain model behavior in a clear, practical way.
+      </p>
+
+      <a href="https://www.kaggle.com/code/caseygman/heart-failure-predictions" target="_blank" class="button">
+        View Kaggle Notebook
+      </a>
+    </section>
+
+    <section class="project">
+      <h2>Powerball Data Analysis (Winning Numbers Strategy)</h2>
+
+      <p>
+        A fun but data-driven Python project exploring historical Powerball results to identify number frequency
+        patterns and examine whether statistical trends appear across past drawings. While the lottery is random,
+        this project demonstrates real skills in data exploration, visualization, and storytelling.
+      </p>
+
+      <img src="powerball_chart.png" alt="Powerball winning numbers frequency analysis">
+      <p class="caption">
+        Winning numbers visual showing historical Powerball number frequency patterns.
+      </p>
+
+      <p><b>Project Goals</b></p>
+      <ul>
+        <li>Analyze historical lottery number distributions</li>
+        <li>Identify repeated frequency trends and number patterns</li>
+        <li>Evaluate whether “hot” or “cold” numbers appear in the data</li>
+        <li>Present results through engaging visual analysis in Python</li>
+      </ul>
+
+      <p><b>Tools &amp; Skills</b></p>
+      <ul>
+        <li>Python</li>
+        <li>Pandas</li>
+        <li>Data Analysis</li>
+        <li>Data Visualization</li>
+        <li>Statistical Thinking</li>
+      </ul>
+
+      <p><b>Project Insight</b></p>
+      <p>
+        Yes, this project analyzes “winning lottery numbers,” partly as a fun attention-grabber, but it still
+        demonstrates real analytical ability: cleaning data, finding patterns, visualizing results, and turning
+        a playful question into a polished analysis project.
+      </p>
+
+      <a href="https://github.com/Casey-G-da/powerball-analysis" target="_blank" class="button">
+        View Project Repository
+      </a>
+    </section>
 
     <div class="footer">
       © 2026 Casey Grewen
     </div>
+
   </div>
 </body>
 </html>
-
-<div class="project">
-
-<h2>Heart Failure Prediction Model</h2>
-
-<p>
-A machine learning project analyzing clinical health data to predict
-the likelihood of heart disease. The notebook explores key cardiovascular
-risk factors and builds predictive models to identify high-risk patients.
-</p>
-<img src="heart_shap.png"
-alt="SHAP feature importance summary for heart failure prediction model"
-style="width:100%; max-width:900px; border-radius:10px; margin-top:20px;">
-
-<p>
-The SHAP summary plot reveals that ST slope, exercise-induced angina,
-and ST depression (Oldpeak) are the strongest predictors of heart disease risk.
-These insights help clinicians understand how different features influence model predictions.
-</p>
-
-  
-<p><b>Project Goals</b></p>
-<ul>
-<li>Explore clinical health data and cardiovascular risk factors</li>
-<li>Build machine learning models for heart disease prediction</li>
-<li>Evaluate model performance and feature importance</li>
-<li>Interpret predictions using SHAP explainability techniques</li>
-</ul>
-
-<p><b>Tools & Skills</b></p>
-<ul>
-<li>Python</li>
-<li>Pandas</li>
-<li>Scikit-Learn</li>
-<li>Machine Learning</li>
-<li>SHAP Explainability</li>
-<li>Data Visualization</li>
-</ul>
-
-<p>
-<a href="https://www.kaggle.com/code/caseygman/heart-failure-predictions"
-target="_blank"
-style="display:inline-block;background:#2b6cb0;color:white;padding:10px 16px;border-radius:6px;margin-top:10px;">
-View Kaggle Notebook
-</a>
-</p>
-
-</div>
-
-<div class="project">
-
-<h2>Powerball Data Analysis (Winning Numbers Strategy)</h2>
-
-
-<p>
-A fun but data-driven analysis exploring historical Powerball lottery results
-to identify number frequency patterns and test whether statistical trends
-could influence number selection strategies.
-</p>
-
-<p><b>Project Goals</b></p>
-<ul>
-<li>Analyze historical lottery number distributions</li>
-<li>Identify frequency trends and repeating patterns</li>
-<li>Evaluate whether “hot” or “cold” numbers exist</li>
-<li>Visualize results using Python</li>
-</ul>
-
-<p><b>Tools & Skills</b></p>
-<ul>
-<li>Python</li>
-<li>Pandas</li>
-<li>Data Analysis</li>
-<li>Data Visualization</li>
-<li>Statistical Thinking</li>
-</ul>
-
-<p><b>Project Insight</b></p>
-<p>
-Yes, this project explores "winning lottery numbers" — partly as a joke —
-but it demonstrates real analytical skills: working with datasets,
-identifying patterns, and communicating findings in an engaging way.
-</p>
-<p>
-<a href="https://github.com/Casey-G-da/powerball-analysis"
-target="_blank"
-style="display:inline-block;background:#2b6cb0;color:white;padding:10px 16px;border-radius:6px;margin-top:10px;">
-View Repository
-</a>
-</p>
-
-<p>
-<a href="https://github.com/Casey-G-da/powerball-analysis/blob/main/powerball_analysis.ipynb"
-target="_blank">
-View Notebook File
-</a>
-</p>
-
-
-
-</div>
-
 
 
 
