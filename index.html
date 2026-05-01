@@ -67,7 +67,7 @@
       background: #1e293b;
       color: #f1f5f9;
       padding: 32px;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 30px;
       border-radius: 14px;
       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
       transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -122,6 +122,7 @@
       padding: 11px 18px;
       border-radius: 8px;
       margin-top: 10px;
+      margin-right: 10px;
       font-weight: bold;
       text-decoration: none;
       transition: background 0.25s ease, transform 0.25s ease;
@@ -158,12 +159,14 @@
     }
   </style>
 </head>
+
 <body>
   <div class="container">
 
     <section class="hero">
       <h1>Casey Grewen</h1>
       <h3>Data Analyst | SQL | Python | BigQuery | Looker | Machine Learning</h3>
+
       <p>
         I am a data analyst focused on turning raw data into clear, useful business insights.
         My portfolio includes SQL, Python, dashboard development, machine learning, and
@@ -186,9 +189,11 @@
         acquisition paths generated the strongest revenue outcomes and where conversion opportunities existed.
       </p>
 
-      <img src="ecommerce_dashboard.png"
-         alt="Ecommerce Revenue Optimization Dashboard"
-         style="width:100%; max-width:900px; border-radius:12px; margin-top:20px;">
+      <img
+        src="ecommerce_dashboard.png"
+        alt="Ecommerce Revenue Optimization Dashboard"
+      >
+
       <p class="caption">
         Dashboard showing ecommerce performance metrics and channel-level insights built in Looker Studio.
       </p>
@@ -224,7 +229,11 @@
         build clear dashboards, and communicate insights that support data-driven decision-making.
       </p>
 
-      <a href="https://github.com/Casey-G-da/ecommerce-revenue-optimization-bigquery" target="_blank" class="button">
+      <a
+        href="https://github.com/Casey-G-da/ecommerce-revenue-optimization-bigquery"
+        target="_blank"
+        class="button"
+      >
         View Project Repository
       </a>
     </section>
@@ -238,7 +247,11 @@
         explainability techniques to interpret which features have the greatest effect on model predictions.
       </p>
 
-      <img src="heart_shap.png" alt="SHAP feature importance summary for heart failure prediction model">
+      <img
+        src="heart_shap.png"
+        alt="SHAP feature importance summary for heart failure prediction model"
+      >
+
       <p class="caption">
         SHAP summary plot showing the relative influence of clinical features on heart disease prediction outcomes.
       </p>
@@ -268,8 +281,61 @@
         but also the ability to explain model behavior in a clear, practical way.
       </p>
 
-      <a href="https://www.kaggle.com/code/caseygman/heart-failure-predictions" target="_blank" class="button">
+      <a
+        href="https://www.kaggle.com/code/caseygman/heart-failure-predictions"
+        target="_blank"
+        class="button"
+      >
         View Kaggle Notebook
+      </a>
+    </section>
+
+    <section class="project">
+      <h2>Internal IT Ticket LLM System</h2>
+
+      <p>
+        Designed a secure, internal-only large language model system for enterprise IT ticket analysis.
+        Built with air-gapped infrastructure, data governance pipelines, RAG architecture, fine-tuning strategy,
+        audit logging, and secure internal access.
+      </p>
+
+      <img
+        src="it-ticket-llm-architecture.png"
+        alt="Internal IT Ticket LLM Project Architecture"
+      >
+
+      <p><b>Project Goals</b></p>
+      <ul>
+        <li>Design a private, internal-only LLM system for IT ticket analysis</li>
+        <li>Protect sensitive company data through air-gapped infrastructure and access controls</li>
+        <li>Use RAG to retrieve relevant internal ticket history and documentation</li>
+        <li>Create a fine-tuning strategy using LoRA or QLoRA</li>
+        <li>Build an audit-ready system with logging, feedback, and governance controls</li>
+      </ul>
+
+      <p><b>Tools &amp; Skills</b></p>
+      <ul>
+        <li>LLM Architecture</li>
+        <li>RAG Design</li>
+        <li>Data Governance</li>
+        <li>Cybersecurity Planning</li>
+        <li>Python</li>
+        <li>Vector Databases</li>
+        <li>FastAPI / Streamlit</li>
+      </ul>
+
+      <p><b>Project Insight</b></p>
+      <p>
+        This project demonstrates how enterprise AI systems can be designed with privacy, security,
+        internal deployment, and responsible model governance as the foundation.
+      </p>
+
+      <a
+        href="internal-it-ticket-llm-project.pdf"
+        target="_blank"
+        class="button"
+      >
+        View Project Document
       </a>
     </section>
 
@@ -280,9 +346,6 @@
         A fun but data-driven Python project exploring historical Powerball results to identify number frequency
         patterns and examine whether statistical trends appear across past drawings. While the lottery is random,
         this project demonstrates real skills in data exploration, visualization, and storytelling.
-      </p>
-
-  
       </p>
 
       <p><b>Project Goals</b></p>
@@ -309,15 +372,21 @@
         a playful question into a polished analysis project.
       </p>
 
-      <a href="https://github.com/Casey-G-da/powerball-analysis" target="_blank" class="button">
+      <a
+        href="https://github.com/Casey-G-da/powerball-analysis"
+        target="_blank"
+        class="button"
+      >
         View Project Repository
       </a>
-      <a href="https://github.com/Casey-G-da/powerball-analysis/blob/main/powerball_analysis.ipynb"
-target="_blank"
-class="button"
-style="margin-left:10px;">
-  View Notebook File
-</a>
+
+      <a
+        href="https://github.com/Casey-G-da/powerball-analysis/blob/main/powerball_analysis.ipynb"
+        target="_blank"
+        class="button"
+      >
+        View Notebook File
+      </a>
     </section>
 
     <div class="footer">
@@ -327,6 +396,8 @@ style="margin-left:10px;">
   </div>
 </body>
 </html>
+
+     
 
 
 
